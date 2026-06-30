@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusty's Motorcycle Service & Repair | Old Towne Orange</title>
+    <title>Dusty's Motorcycle Service & Repair | Orange Traffic Circle</title>
+    <meta name="description" content="Veteran-owned motorcycle repair at the Orange Traffic Circle — the gateway to Santiago Canyon. Honest service on Harleys, sportbikes & adventure bikes. Text or book online.">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:title" content="Dusty's Motorcycle Service & Repair | Orange Traffic Circle">
+    <meta property="og:description" content="The honest mechanic at the Orange Traffic Circle. No phone tag. No surprises. Text or book online.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:url" content="https://mjmorrison10.github.io/dustys-motorcycle-repair-landing-page/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
-        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; }
     </style>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MotorcycleRepair",
+      "name": "Dusty's Motorcycle Service & Repair",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "130 S Lemon St",
+        "addressLocality": "Orange",
+        "addressRegion": "CA",
+        "postalCode": "92866"
+      },
+      "telephone": "(714) 787-9453",
+      "openingHours": "Mo-Su 09:00-19:00",
+      "areaServed": "Orange, CA",
+      "description": "Veteran-owned motorcycle repair shop located at the Orange Traffic Circle — the gateway to Santiago Canyon rides."
+    }
+    </script>
 </head>
 <body class="bg-zinc-950 text-zinc-100">
 
     <!-- Header -->
     <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter">DUSTY'S <span class="text-orange-500">MOTO</span></div>
+            <div class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="Dusty's Motorcycle Service & Repair" class="h-10 w-auto">
+        <div class="text-2xl font-bold tracking-tighter">DUSTY'S <span class="text-orange-500">MOTO</span></div>
+    </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
                 <a href="#services" class="hover:text-orange-500 transition">Services</a>
                 <a href="#about" class="hover:text-orange-500 transition">About</a>
@@ -32,24 +64,38 @@
     <!-- Hero Section -->
     <section class="hero-gradient h-screen flex items-center justify-center text-center px-4">
         <div class="max-w-4xl">
-            <div class="inline-block px-3 py-1 bg-orange-600 text-xs font-bold tracking-widest uppercase mb-6">Veteran Owned & Operated</div>
-            <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tight">Precision Service.<br><span class="text-orange-500">No Excuses.</span></h1>
-            <p class="text-xl md:text-2xl text-zinc-400 mb-10 max-w-2xl mx-auto">Dusty's Motorcycle Service & Repair: High-performance maintenance and trusted repairs in the heart of Old Towne Orange.</p>
+            <div class="inline-block px-4 py-1.5 bg-orange-600 text-xs font-bold tracking-[3px] uppercase mb-6 rounded-full">Veteran Owned • Orange Traffic Circle</div>
+            
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-[-3px] leading-none">
+                Your bike’s ready<br>for the canyon.<br>
+                <span class="text-orange-500">Dusty’s ready when you are.</span>
+            </h1>
+            
+            <p class="text-2xl md:text-3xl text-zinc-300 mb-10 max-w-3xl mx-auto font-light">
+                The honest mechanic at the Orange Traffic Circle.<br>
+                No phone tag. No surprises. Just real work.
+            </p>
+            
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-500 hover:text-white transition uppercase">Book Your Service</a>
-                <a href="#services" class="border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition uppercase">View Services</a>
+                <a href="#contact" 
+                   class="bg-white text-black px-10 py-5 rounded-full font-bold text-xl hover:bg-orange-500 hover:text-white transition-all active:scale-[0.985]">
+                    Text or Book Online
+                </a>
+                <a href="#services" 
+                   class="border-2 border-white/40 hover:border-white px-10 py-5 rounded-full font-bold text-xl transition-all">
+                    See What We Fix
+                </a>
             </div>
+            <p class="text-sm text-zinc-400 mt-6 tracking-widest">Mon–Sun • 9am–7pm • 130 S Lemon St</p>
         </div>
     </section>
 
     <!-- Trusted Bar -->
-    <div class="bg-zinc-900 border-y border-zinc-800 py-6 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around gap-8 text-zinc-500 font-bold uppercase tracking-widest text-sm">
-            <span>Maintenance</span>
-            <span>Oil Changes</span>
-            <span>Tire Changes</span>
-            <span>Fork Seals</span>
-            <span>Clutch Work</span>
+    <div class="bg-zinc-900 border-y border-zinc-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-x-10 gap-y-2 text-zinc-400 font-medium uppercase tracking-[2px] text-sm">
+            <span>Harley • Sportbike • Adventure</span>
+            <span>Oil Changes • Tires • Brakes</span>
+            <span>Fork Seals • Clutch • Chain Work</span>
         </div>
     </div>
 
@@ -60,18 +106,18 @@
                 <h2 class="text-4xl font-bold mb-4">Professional Services</h2>
                 <div class="h-1 w-20 bg-orange-500"></div>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-orange-500 transition group">
-                    <h3 class="text-xl font-bold mb-4">Routine Maintenance</h3>
-                    <p class="text-zinc-400">Keep your machine running at its peak with our comprehensive multi-point inspections and maintenance schedules.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-3xl hover:border-orange-500 transition">
+                    <h3 class="text-2xl font-bold mb-3">Routine Maintenance</h3>
+                    <p class="text-zinc-400">Full inspections, oil changes, and scheduled service for every make and model — including your 2024 adventure bike.</p>
                 </div>
-                <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-orange-500 transition">
-                    <h3 class="text-xl font-bold mb-4">Tires & Oil</h3>
-                    <p class="text-zinc-400">Fast, professional tire mounting and oil changes using only premium fluids and components.</p>
+                <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-3xl hover:border-orange-500 transition">
+                    <h3 class="text-2xl font-bold mb-3">Tires, Brakes &amp; Chains</h3>
+                    <p class="text-zinc-400">Fast, honest tire mounting, brake service, and chain adjustments. Walk-ins welcome for quick jobs.</p>
                 </div>
-                <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-orange-500 transition">
-                    <h3 class="text-xl font-bold mb-4">Performance Repairs</h3>
-                    <p class="text-zinc-400">Specializing in fork seals, clutch work, and technical repairs for all major makes and models.</p>
+                <div class="p-8 bg-zinc-900 border border-zinc-800 rounded-3xl hover:border-orange-500 transition">
+                    <h3 class="text-2xl font-bold mb-3">Performance &amp; Repairs</h3>
+                    <p class="text-zinc-400">Fork seals, clutch work, and technical repairs on Harleys, sportbikes, and adventure rigs. No upselling. Ever.</p>
                 </div>
             </div>
         </div>
@@ -84,10 +130,10 @@
                 <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=1200" alt="Dustin Dodds" class="rounded-2xl shadow-2xl">
             </div>
             <div>
-                <div class="text-orange-500 font-bold uppercase tracking-widest mb-4">Meet Dusty</div>
-                <h2 class="text-4xl font-bold mb-6">Veteran Owned. <br>Community Trusted.</h2>
-                <p class="text-zinc-400 text-lg mb-8 leading-relaxed">
-                    Dustin "Dusty" Dodds founded Dusty's Moto on a simple principle: precision. As a veteran, Dustin brings military-grade discipline and attention to detail to every bike that rolls into his shop.
+                <div class="text-orange-500 font-bold tracking-[3px] text-sm mb-3">MEET DUSTIN DODDS</div>
+                <h2 class="text-5xl font-bold mb-6 tracking-tight">The neighborhood mechanic<br>at the gateway to every ride.</h2>
+                <p class="text-zinc-300 text-xl leading-relaxed mb-8">
+                    Veteran-owned. Old-school honest. Located right on Chapman Ave at the Orange Traffic Circle — the road every local rider takes to Santiago Canyon.
                 </p>
                 <div class="space-y-4">
                     <div class="flex items-start gap-4">
@@ -109,44 +155,72 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-24 px-4 bg-orange-600 text-white">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-            <div>
-                <h2 class="text-5xl font-bold mb-8 uppercase tracking-tight">Ready to roll?</h2>
-                <p class="text-xl text-orange-100 mb-12">Call or visit the shop today to get your service scheduled. Walk-ins are always welcome for tire and oil services.</p>
-                
-                <div class="space-y-8">
-                    <div>
-                        <div class="text-sm uppercase font-bold tracking-widest text-orange-200 mb-2">Call Us</div>
-                        <a href="tel:7147879453" class="text-3xl font-bold hover:underline">(714) 787-9453</a>
-                    </div>
-                    <div>
-                        <div class="text-sm uppercase font-bold tracking-widest text-orange-200 mb-2">Visit the Shop</div>
-                        <div class="text-2xl font-bold">130 S Lemon St, Orange, CA 92866</div>
-                    </div>
-                </div>
+    <!-- Contact / Lead Capture -->
+    <section id="contact" class="py-20 px-4 bg-zinc-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-8">
+                <div class="text-orange-500 font-bold tracking-[3px] text-sm mb-3">NO PHONE TAG REQUIRED</div>
+                <h2 class="text-5xl font-bold tracking-tight">Text or book online.<br>We’ll get back to you fast.</h2>
             </div>
-            <div class="bg-black/20 p-8 rounded-3xl backdrop-blur-sm border border-white/10">
-                <form class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-bold uppercase tracking-widest mb-2">Your Name</label>
-                        <input type="text" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 outline-none focus:border-white transition">
+            
+            <div class="max-w-lg mx-auto bg-zinc-950 border border-zinc-800 rounded-3xl p-8 md:p-10">
+                <form class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-bold tracking-widest mb-2 text-left">YOUR NAME</label>
+                            <input type="text" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-lg focus:border-orange-500 transition" placeholder="Alex Rivera">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold tracking-widest mb-2 text-left">PHONE NUMBER</label>
+                            <input type="tel" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-lg focus:border-orange-500 transition" placeholder="(714) 555-1234">
+                        </div>
                     </div>
+                    
                     <div>
-                        <label class="block text-sm font-bold uppercase tracking-widest mb-2">Phone Number</label>
-                        <input type="tel" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 outline-none focus:border-white transition">
+                        <label class="block text-sm font-bold tracking-widest mb-2 text-left">BIKE (MAKE + MODEL + YEAR)</label>
+                        <input type="text" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-lg focus:border-orange-500 transition" placeholder="2024 Honda NC750X DCT">
                     </div>
+                    
                     <div>
-                        <label class="block text-sm font-bold uppercase tracking-widest mb-2">Bike Model & Year</label>
-                        <input type="text" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 outline-none focus:border-white transition">
+                        <label class="block text-sm font-bold tracking-widest mb-2 text-left">WHAT DO YOU NEED?</label>
+                        <textarea class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-4 text-lg h-28 focus:border-orange-500 transition" placeholder="Oil change + tire check before a canyon run"></textarea>
                     </div>
-                    <div>
-                        <label class="block text-sm font-bold uppercase tracking-widest mb-2">Service Needed</label>
-                        <textarea class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 outline-none focus:border-white transition h-32"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-white text-orange-600 font-bold uppercase py-4 rounded-xl hover:bg-zinc-100 transition">Request Quote</button>
+                    
+                    <button type="submit" 
+                            class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold text-xl py-5 rounded-3xl transition active:scale-[0.985]">
+                        SEND DUSTY A MESSAGE
+                    </button>
+                    <p class="text-xs text-zinc-400 tracking-widest">We usually reply within 30 minutes during shop hours</p>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps & Directions -->
+    <section class="py-12 px-4 bg-zinc-950 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="text-orange-500 font-bold tracking-[3px] text-sm mb-2">FIND US</div>
+                <h3 class="text-3xl font-bold">Right at the Orange Traffic Circle</h3>
+            </div>
+            
+            <div class="rounded-3xl overflow-hidden border border-zinc-800">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.8!2d-117.855622!3d33.787299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ3JzE0LjMiTiAxMTfCsDUxJzIwLjIiVw!5e0!3m2!1sen!2sus!4v1710000000000" 
+                    width="100%" 
+                    height="280" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <div class="text-center mt-6">
+                <a href="https://maps.google.com/?q=130+S+Lemon+St,+Orange,+CA+92866" 
+                   target="_blank"
+                   class="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-medium">
+                    Get Directions to 130 S Lemon St →
+                </a>
             </div>
         </div>
     </section>
@@ -161,6 +235,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-zinc-950 border-t border-zinc-800 p-3 md:hidden z-50">
+        <a href="#contact" 
+           class="block w-full bg-orange-600 text-center text-white font-bold py-4 rounded-2xl text-lg active:scale-[0.985] transition">
+            Text or Book Online
+        </a>
+    </div>
 
 </body>
 </html>
